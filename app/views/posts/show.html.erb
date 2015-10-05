@@ -8,7 +8,7 @@
 
 
 	<div id="content">
-		<%= @post.content %>
+		<%= markdown @post.content %>
 	</div>
 
 	<div id="share_box">
@@ -17,5 +17,5 @@
 
 		
 	</div>
-
+	<%= link_to "Edit", edit_post_path(@post) %>
 </div>
